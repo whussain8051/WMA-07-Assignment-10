@@ -129,3 +129,43 @@ for (let property in person1) {
 document.write("<h2>Task 5: Object Comparison");
 // Compare two objects to check if they have the same properties and values.
 document.write("<h2>Compare two objects to check if they have the same properties and values.");
+
+
+
+// Task 6: Object Nesting
+document.write("<h2>Task 6: Object Nesting");
+// Create an object that contains another object as one of its properties.
+document.write("<h2>Create an object that contains another object as one of its properties.</br>");
+
+let mySelf = {
+    name: 'Waqar',
+    age: 28,
+    address: {
+        street: '07',
+        city: 'Faisalabad',
+        state: 'Student',
+        zip: '36000'
+    },
+};
+
+// Log the person object to the console
+console.log(mySelf);
+
+// Accessing the nested object properties
+document.write(`${mySelf.address.city} </br>`);  // Output: Anytown
+
+// Access and modify properties of a nested object.
+document.write("<h2>Access and modify properties of a nested object.</br>");
+
+mySelf.address.houseNo = "P-718";
+mySelf.address.zip = 38000;
+document.write(`${mySelf.address.houseNo} ${mySelf.address.zip} </br>`);
+
+
+// Task 7: Object Prototypes
+document.write("<h2>Task 7: Object Prototypes");
+// Create a prototype object and use it to create multiple instances of objects.
+document.write("<h2>Create a prototype object and use it to create multiple instances of objects.</br>");
+
+// Add a method to the prototype object and observe its effect on the instances.
+document.write("<h2>Add a method to the prototype object and observe its effect on the instances.</br>");
